@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG">
+	<test thread-count="5" name="Test1">
+		<groups>
+			<run>
+				<include name="Group"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="examples.TestNGExample_1">
+			</class>
+			<class name="examples.TestNGExample_2" />
+			<class name="examples.TestNGExample_3" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="examples.TestNGExample_2"></class>
+			<class name="examples.TestNGExample_1"></class>
+			<class name="examples.TestNGExample_3"></class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->
